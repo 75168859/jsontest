@@ -86,8 +86,8 @@ public class JSONUtil {
 	 * @param beanClass
 	 * @return
 	 */
-	public static Collection fromJsonStringToArray(String jsonStr,
-			Class beanClass) {
+	public static Collection<?> fromJsonStringToArray(String jsonStr,
+			Class<?> beanClass) {
 		setDataFormat2JAVA();
 		return JSONArray.toCollection(JSONArray.fromObject(jsonStr), beanClass);
 	}
